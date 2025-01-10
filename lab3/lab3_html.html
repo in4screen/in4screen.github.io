@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Параграфи з різними стилями</title>
+    <style>
+        .global-style {
+            color: green;
+            border: 2px solid blue;
+            padding: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p style="color: red; border: 2px solid black; padding: 10px;">Перший параграф зі стилями inline.</p>
+    <p class="global-style">Другий параграф зі стилями через глобальні CSS.</p>
+    <p class="external-style">Третій параграф зі стилями з зовнішнього файлу.</p>
+</body>
+</html>

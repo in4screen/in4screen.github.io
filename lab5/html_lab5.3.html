@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Columns Layout</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas: 
+                "header1 header2 header3"
+                "col1 col2 col3";
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        #header1, #header2, #header3 {
+            background-color: lightblue;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #col1, #col2, #col3 {
+            background-color: lightgray;
+            padding: 150px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #header1 {
+            grid-area: header1;
+        }
+
+        #col1 {
+            grid-area: col1;
+        }
+
+        #header2 {
+            grid-area: header2;
+        }
+
+        #col2 {
+            grid-area: col2;
+        }
+
+        #header3 {
+            grid-area: header3;
+        }
+
+        #col3 {
+            grid-area: col3;
+        }
+    </style>
+</head>
+<body>
+    <div id="header1">Header 1</div>
+    <div id="col1">Column 1 Content</div>
+    <div id="header2">Header 2</div>
+    <div id="col2">Column 2 Content</div>
+    <div id="header3">Header 3</div>
+    <div id="col3">Column 3 Content</div>
+</body>
+</html>
